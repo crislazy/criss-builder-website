@@ -1,0 +1,35 @@
+--- const { title = "Cris's Builder Page" } = Astro.props; ---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav>
+      <h1>Cris's Builder Page</h1>
+      <div class="nav-links">
+        <a href="#"><img src="test.png" class="nav-a-img" /></a>
+        <a href="#"><img src="test.png" class="nav-a-img" /></a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Made with ♥ by <a href="https://crislzy.xyz">Cris</a> - A project for <a href="https://pixl.hackclub.com">HackClub Pixl YSWS</a>
+      </p>
+    </footer>
+  </body>
+</html>

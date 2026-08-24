@@ -1,17 +1,17 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <br>
+  <div class="hero">
+    <img src="/pfp.png" class="hero-img" />
+    <div class="hero-info">
+      <h1>Hello there!</h1>
+      <p>I'm Cris(or Crislzy bc im lazy af). I'm a teen developer from Romania and a <a href="https://hackclub.com/">Hack Club</a> member.</p>
+      <p>I love coding random stuff like websites and Slack/Discord bots. I also like selfhosting stuff.</p>
+      <h2>Tech Stacks</h2>
+      <img src="https://skillicons.dev/icons?i=html,css,astro,ts,js,py,bun,nodejs,sqlite,git,github,linux,docker&theme=dark" alt="Tech stack" class="skill-icons">
+    </div>
+  </div>
+</MainLayout>
