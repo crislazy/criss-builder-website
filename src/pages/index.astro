@@ -3,7 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-  <div class="hero">
+  <!-- MAIN CONTENT -->
+  <div class="hero" id="main">
     <img src="/pfp.png" class="hero-img" />
     <div class="hero-info">
       <h1>Hello there!</h1>
@@ -14,7 +15,8 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </div>
 
-  <div class="section">
+  <!-- PROJECTS -->
+  <div class="section" id="projects">
     <h2>Projects</h2>
     <p>Here are some of my projects:</p>
     <div class="projects">
@@ -33,6 +35,48 @@ import MainLayout from "../layouts/MainLayout.astro";
         <p>A simple Slack selfbot that welcomes and DMs new channel members, has autoreplies and more.</p>
         <p><a href="https://github.com/crislazy/whiskers">View on GitHub</a></p>
       </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>All the ways you can reach me:</p>
+    <ul>
+      <li>By email: <a href="mailto:me@crislzy.xyz">me@crislzy.xyz</a></li>
+      <li>On Discord: <a href="https://discord.com/users/1528816581105156200">Cris(@someone_named_cris)</a></li>
+      <li>On my Discord Server: <a href="https://r.webcris.icu/discord">here :3</a></li>
+      <li>On HackClub's Slack: <a href="https://hackclub.enterprise.slack.com/team/U09TNMQ9MCZ">Cris(@crislzy)</a></li>
+      <li>On Matrix: <a href="https://matrix.to/#/@crisislazy:matrix.org">@crisislazy:matrix.org</a></li>
+    </ul>
+  </div>
+
+  <!-- SOCIAL MEDIA -->
+  <div class="section" id="sm">
+    <h2>Social Media</h2>
+    <ul>
+      <li>TikTok: <a href="https://www.tiktok.com/@crislzy">@crislzy</a></li>
+      <li>GitHub: <a href="https://github.com/crislazy">@crislazy</a></li>
+      <li>YouTube: <a href="https://youtube.com/@crislzy">@crislzy</a></li>
+    </ul>
+  </div>
+
+  <!-- 88x31 BUTTONS -->
+  <div class="section" id="buttons">
+    <h2>Cool 88x31 buttons</h2>
+    <div class="buttons">
+      <a href="https://crislzy">
+        <img src="https://user-cdn.hackclub-assets.com/019ed4b1-6838-746d-a6a4-1402670fe71c/88x31.gif" alt="crislzy's button" />
+      </a>
+      <a href="https://hackclub.com">
+        <img src="https://cdn.hackclub.com/019eb7f9-f75f-7bde-ae35-10a1dd55073c/hackclub.gif" alt="hackclub's button" />
+      </a>
+      <a href="https://alexanderisashy.one/">
+        <img src="https://cdn.hackclub.com/019eb7f6-9096-7359-9ae6-b5d5c4bfa22f/gateway.png" alt="alexander's button" />
+      </a>
+      <a href="https://gizzy.gay">
+        <img src="https://gizzy.gay/88x31.svg" alt="gizzy's button" />
+      </a>
     </div>
   </div>
 </MainLayout>
