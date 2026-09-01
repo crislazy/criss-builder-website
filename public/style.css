@@ -127,10 +127,33 @@ main {
   gap: 1rem;
 }
 
+.buttons img {
+  image-rendering: pixelated;
+  width: 88px;
+  height: 31px;
+  transition: transform 0.2s ease;
+}
+
+.buttons img:hover {
+  transform: scale(1.2);
+}
+
 footer {
   padding: 0rem 1rem 0rem 1rem;
   border-radius: 8px;
   background: var(--surface);
   margin-top: auto;
   margin-bottom: 1rem;
+}
+
+.easter-egg {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.easter-egg img {
+  width: 60px;
+  height: 60px;
+  image-rendering: pixelated;
 }
